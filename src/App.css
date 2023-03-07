@@ -197,7 +197,7 @@ button {
 
 @media (max-width: 650px) {
   .clima-card {
-    width: 40%;
+    width: 50%;
     height: 30%;
   }
 
@@ -209,7 +209,7 @@ button {
   }
 
   .grados-descrip, .grados-ciudad {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .grados-temp {
@@ -222,7 +222,58 @@ button {
   }
 
   .cambiar-grados  {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  input {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  form {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .clima-card {
+    width: 50%;
+    height: 20%;
+  }
+
+  img {
+    top: -0px;
+    right: -0px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .grados-descrip, .grados-ciudad {
+    font-size: 10px;
+  }
+
+  .grados-temp {
+    font-size: 15px;
+  }
+
+  .grados-temp span {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .cambiar-grados  {
+    margin-bottom: 200px;
     width: 100px;
     height: 30px;
     font-size: 15px;
