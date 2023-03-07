@@ -5,39 +5,39 @@ const Clima = () => {
   const iconos = [
     {
       id: 1,
-      src: `/assets/icono1.svg`
+      src: `/icono1.svg`
     },
     {
       id: 2,
-      src: `/assets/icono2.svg`
+      src: `/icono2.svg`
     },
     {
       id: 3,
-      src: `/assets/icono3.svg`
+      src: `/icono3.svg`
     },
     {
       id: 4,
-      src: `/assets/icono4.svg`
+      src: `/icono4.svg`
     },
     {
       id: 5,  
-      src: `/assets/icono5.svg`
+      src: `/icono5.svg`
     },
     {
       id: 6,
-      src: `/assets/icono6.svg`
+      src: `/icono6.svg`
     },
     {
       id: 7,
-      src: `/assets/icono7.svg`
+      src: `/icono7.svg`
     },
     {
       id: 8,
-      src: `/assets/icono8.svg`
+      src: `/icono8.svg`
     },
     {
       id: 9,
-      src: `/assets/icono9.svg`
+      src: `/icono9.svg`
     },
   ];
 
