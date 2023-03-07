@@ -1,0 +1,38 @@
+:root {
+  --bg-color-title: #026eed;
+  --bg-color-text: #56a5f1;
+  --bg-color-subtext: #d5f3ff;
+  --bg-color-btn: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--bg-color-title);
+}
+
+.App {
+  background: radial-gradient(#d5f3ff, #51b4e8);
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.dark-mode {
+  background: radial-gradient(#53388f, #2f2958);
+}
+
+.dark-mode .clima-card {
+  background-color: #5836b3;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #7d69f1;
+  color: white;
+}

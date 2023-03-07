@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --bg-color-title: #026eed;
+  --bg-color-text: #56a5f1;
+  --bg-color-subtext: #d5f3ff;
+  --bg-color-btn: #ffffff;
+}
+
+.clima-card {
+  width: 40%;
+  height: 40%;
+  offset: 0px 4.85px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: skewX(-10deg);
+  border-radius: 4.85px;
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 200px ;
+  background: radial-gradient(#e5f2ff, #d5f3ff);
+  /* clip-path: polygon(0 0, 0 200%, 500% 100%); */
+}
+
+
+.grados-descrip, .grados-ciudad {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.grados-descrip {
+  color: var(--bg-color-text);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 23px;
+  padding: 10px;
+}
+
+.grados-ciudad {
+  color: var(--bg-color-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 23px;
+  padding: 10px;
+}
+
+img {
+  position: absolute;
+  top: -80px;
+  right: -50px;
+  width: 50%;
+  height: 50%px;
+}
+
+.grados-temp {
+  font-size: 75px;
+}
+
+.grados-temp span {
+  color: var(--bg-color-text);
+  display: block;
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+.cambiar-grados {
+  border-radius: 4.85px;
+  border: none;
+  background: #38a0d8;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+  margin-bottom: 150px;
+  width: 178px;
+  height: 38px;
+  offset: 0px 4.85px;
+  box-shadow:  2px 2px 8px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s;
+  color: var(--bg-color-btn);
+}
+
+.cambiar-grados:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  border-radius: 4.85px;
+  border: none;
+  background: #38a0d8;
+  position: absolute;
+  left: 46%;
+  width: 178px;
+  height: 38px;
+  offset: 0px 4.85px;
+  box-shadow:  2px 2px 8px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s;
+  color: var(--bg-color-btn);
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--bg-color-btn);
+}
+form {
+  color: var(--bg-color-btn);
+  width: 178px;
+}
+
+.barra-de-busqueda,
+button {
+  color: var(--bg-color-btn);
+  height: 38px;
+}
+.title {
+  font-size: 23px;
+  color: var(--bg-color-btn);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.dark-mode {
+  background: radial-gradient(#53388f, #2f2958);
+}
+
+.dark-mode .clima-card {
+  background-color: #5836b3;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #7d69f1;
+  color: white;
+}
+
+
+@media (max-width: 950px) {
+  .clima-card {
+    width: 40%;
+    height: 30%;
+  }
+
+  img {
+    top: -10px;
+    right: -10px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .grados-descrip, .grados-ciudad {
+    font-size: 15px;
+  }
+
+  .grados-temp {
+    font-size: 30px;
+  }
+
+  .grados-temp span {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .cambiar-grados  {
+    margin-bottom: 200px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  input {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  form {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .clima-card {
+    width: 40%;
+    height: 30%;
+  }
+
+  img {
+    top: -10px;
+    right: -10px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .grados-descrip, .grados-ciudad {
+    font-size: 10px;
+  }
+
+  .grados-temp {
+    font-size: 20px;
+  }
+
+  .grados-temp span {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .cambiar-grados  {
+    margin-bottom: 100px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  input {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  form {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
